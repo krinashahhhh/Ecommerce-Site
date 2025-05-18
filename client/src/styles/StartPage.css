@@ -1,0 +1,159 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+.start-page {
+  font-family: 'Baloo 2', cursive;
+}
+
+.start-page {
+  height: 100vh;
+  width: 100%;
+  background: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/1*G_2f5pzs3Vsvx6vE4GPHRA.jpeg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow:hidden;
+}
+
+.start-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  z-index: 0;
+}
+
+.start-container {
+  z-index: 1;
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.branding {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.logo-icon {
+  height: 70px;
+  width: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+}
+
+.tagline {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+  z-index: 10;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #eea66f;
+  font-style:oblique;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-section {
+  flex: 1;
+  padding: 2rem;
+  color: white;
+}
+
+.subheading {
+  position: absolute;
+  top: 9.5rem; 
+  left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.right-section {
+  flex: 1;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 100px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.auth-form input[type="email"] {
+  margin-bottom:0.5rem/* tight spacing with password */
+}
+
+.auth-form input[type="password"] {
+  margin-bottom: 1rem; /* clear space before button */
+}
+.auth-form input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.auth-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.4);
+}
+
+.auth-form button {
+  width: 40%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #884dbb;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.toggle-link {
+  color:#d3bbf5;
+  text-decoration:underline;
+}
+
+.toggle-link:hover{
+color: #f3f0f7;
+}
+.auth-form button:hover {
+  background: #5205c6;
+}
+.start-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}

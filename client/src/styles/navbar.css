@@ -1,0 +1,94 @@
+
+.navbar {
+  background: linear-gradient(to right, #fdf4ff, #8670f4);
+  color: #4b0082;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+.navbar-left h2 {
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.navbar-center {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #d8b4fe;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.add-product-btn {
+  background-color: transparent;
+  border: none;
+ 
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logo-icon {
+  height: 3px;
+  width: 3px;
+  object-fit: contain;
+  margin-left: 8px;
+}
+
+
+.cart-count {
+  position: absolute;
+  top: 30px;
+  right: 7px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 1px 4px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  line-height: 1;
+}
+
+.cart-icon svg {
+  color: white;
+}
